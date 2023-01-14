@@ -1,0 +1,30 @@
+
+  <div class="col">
+    <div class="card">
+      <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+      <div class="card-body">
+        <h5 class="card-title">lieu:{{destination.nomlieu}}</h5>
+        <p class="card-text">
+          pays:{{destination.pays}}
+        </p>
+        <p> prix:{{destination.prix}}</p>
+        <p>continent{{destination.continent}}</p>
+        <p style="background-color:red;">{{destination.note | userIcon}}</p>
+        <button class="bg-primary text-white" (click)="onDetailDestination()">Voir plus de photos</button>
+        <button class="bg-primary text-white" >Reservez un ticket</button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="card ">
+     <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+     <div class="card-body text-center">
+       <p class="card-text">Some text inside the first card</p>
+       <p class="card-text">Some more text to increase the height</p>
+       <p class="card-text">Some more text to increase the height</p>
+       <p class="card-text">{{destination.prix}}</p>
+     </div>
+   </div>-->
+
+
