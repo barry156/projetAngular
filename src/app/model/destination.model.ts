@@ -7,11 +7,13 @@ export class destination {
   prix: number;
 
 
+
   afficheUrl: string;
   like: number;
   note?: number;
+  galerie:string [];
 
-  constructor(id: number, nomlieu: string, pays: string, continent: string, region: string,prix:number,  afficheUrl: string, like: number, note?: number) {
+  constructor(id: number, nomlieu: string, pays: string, continent: string, region: string,prix:number,  afficheUrl: string, like: number, galerie:string[], note?: number) {
     this.id = id;
     this.nomlieu = nomlieu;
     this.pays=pays;
@@ -22,7 +24,9 @@ export class destination {
     this.afficheUrl=afficheUrl;
 
     this.like = like;
+    this.galerie=galerie;
     this.note = note;
+
 
 
   }

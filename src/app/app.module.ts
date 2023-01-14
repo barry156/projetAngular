@@ -23,6 +23,7 @@ import { AsieComponent } from './asie/asie.component';
 import { EuropeComponent } from './europe/europe.component';
 import { OceanieComponent } from './oceanie/oceanie.component';
 import { AmeriqueComponent } from './amerique/amerique.component';
+import { RechercheComponent } from './recherche/recherche.component';
 
 
 
@@ -47,7 +48,8 @@ import { AmeriqueComponent } from './amerique/amerique.component';
      OceanieComponent,
      AmeriqueComponent,
 
-     OceanieComponent
+     OceanieComponent,
+       RechercheComponent
 
 
   ],

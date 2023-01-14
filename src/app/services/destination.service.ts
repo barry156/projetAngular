@@ -20,6 +20,7 @@ export class DestinationService {
 
       afficheUrl: 'assets/membres/membres/membre1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg"],
       note: 4,
     },
     {
@@ -34,6 +35,7 @@ export class DestinationService {
 
       afficheUrl: 'assets/membres/membres/membre1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       note: 5,
     },
     {
@@ -48,6 +50,7 @@ export class DestinationService {
 
       afficheUrl: 'assets/membres/membres/membre1.jpg',
       like: 173,
+      galerie:['assets/membres/membres/membre1.jpg', 'assets/membres/membres/membre1.jpg','assets/membre/membres/membre1.jpg' ],
       note: 3,
     },
 
@@ -63,6 +66,7 @@ export class DestinationService {
 
       afficheUrl: 'assets/membres/membres/membre1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       note: 3,
     },
 
@@ -78,6 +82,7 @@ export class DestinationService {
 
       afficheUrl: 'assets/membres/membres/membre1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       note: 3,
     },
     {
@@ -92,6 +97,7 @@ export class DestinationService {
 
       afficheUrl: 'assets/membres/membres/membre1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       note: 3,
     },
     {
@@ -106,6 +112,7 @@ export class DestinationService {
 
       afficheUrl: 'assets/membres/membres/membre1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       note: 3,
     },
     ]
@@ -156,6 +163,8 @@ export class DestinationService {
 
 
   }
+  islogg!:boolean;
+
 
 
 }
