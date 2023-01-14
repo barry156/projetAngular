@@ -157,7 +157,5 @@ export class DestinationService {
 
   }
 
-  getOceanieDestinations() {
-    return this.destinations.filter((el)=>el.continent=="Océanie");
-  }
+
 }

@@ -2,11 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
-<<<<<<< HEAD
 
-=======
-import { RouterOutlet } from "@angular/router";
->>>>>>> 05579af7cca09c7eb44f233c3354ed5b34ebaab2
+
+
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
