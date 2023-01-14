@@ -91,5 +91,16 @@ export class DestinationService {
 
 
   }
+  getOceanieDestinations() {
+    return this.destinations.filter((el)=>el.continent=="Oceanie");
+
+
+  }
+  getAmeriqueDestinations() {
+    return this.destinations.filter((el)=>el.continent=="Amerique");
+
+
+
+  }
 
 }
