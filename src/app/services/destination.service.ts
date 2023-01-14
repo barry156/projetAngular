@@ -24,8 +24,8 @@ export class DestinationService {
     },
     {
       id: 134,
-      nomlieu: 'hymalaya',
-      pays:"vietnam",
+      nomlieu: 'himalaya',
+      pays:"Népal",
       continent:'Asie',
       region:"santis",
 
@@ -50,6 +50,7 @@ export class DestinationService {
       like: 173,
       note: 3,
     },
+
     {
       id: 136,
       nomlieu: 'Sphinx',
@@ -63,7 +64,50 @@ export class DestinationService {
       afficheUrl: 'assets/membres/membres/membre1.jpg',
       like: 173,
       note: 3,
-    }
+    },
+
+    {
+      id: 137,
+      nomlieu: 'Opera Sydney',
+      pays: "Australie",
+      continent: 'Océanie',
+      region: "New South Wales",
+
+      prix: 5000,
+
+
+      afficheUrl: 'assets/membres/membres/membre1.jpg',
+      like: 173,
+      note: 3,
+    },
+    {
+      id: 138,
+      nomlieu: 'Statue de la liberté',
+      pays: "États-Unis",
+      continent: 'Amérique du Nord',
+      region: "Liberty Island",
+
+      prix: 4000,
+
+
+      afficheUrl: 'assets/membres/membres/membre1.jpg',
+      like: 173,
+      note: 3,
+    },
+    {
+      id: 139,
+      nomlieu: 'Machu Picchu',
+      pays: "Peru",
+      continent: 'Amérique du Sud',
+      region: "Cusco",
+
+      prix: 5000,
+
+
+      afficheUrl: 'assets/membres/membres/membre1.jpg',
+      like: 173,
+      note: 3,
+    },
     ]
   getAllDestinations() {
     return this.destinations;
@@ -76,7 +120,7 @@ export class DestinationService {
       return destination;
     }
   }
-  getAfriquedestinations() {
+  getAfriqueDestinations() {
      return this.destinations.filter((el)=>el.continent=="Afrique");
 
 
@@ -103,4 +147,17 @@ export class DestinationService {
 
   }
 
+  getNADestinations() {
+    return this.destinations.filter((el)=>el.continent=="Amérique du Nord");
+  }
+
+  getSADestinations() {
+    return this.destinations.filter((el)=>el.continent=="Amérique du Sud");
+
+
+  }
+
+  getOceanieDestinations() {
+    return this.destinations.filter((el)=>el.continent=="Océanie");
+  }
 }
