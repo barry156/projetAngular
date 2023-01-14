@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validator, Validators} from "@angular/forms";
 import {map,Observable} from "rxjs";
-import {ContactModel} from "../contactModel/contact.model";
-import {ContactService} from "../contactService/contact.service";
+import {ContactModel} from "../model/contact.model";
+import {ContactService} from "../services/contact.service";
 import {Router} from "@angular/router";
 
 @Component({

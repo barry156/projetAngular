@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {Validator} from "@angular/forms";
-import {ContactModel} from "../contactModel/contact.model";
+import {ContactModel} from "../model/contact.model";
 
 @Injectable(
   {
@@ -14,14 +14,14 @@ export class ContactService{
       id:1,
       nomLieu:'Yaounde',
       pays: 'cameroun',
-      imageUrl:'asset/img_1.png',
+      imageUrl:'assets/img_3.png',
       region: 'centre',
       nomPersonne:'Mamadou',
       prenomPersonne: 'Barry',
       identifiantIG: 'itsBarry',
       numTel: 145,
       facebook: 'Aucun',
-      photoUrl:'assets/img_2.png',
+      photoUrl:'assets/img_3.png',
       email:'siradio156@gmail.com',
       activites:"fleuve"
     },
@@ -30,7 +30,7 @@ export class ContactService{
       id:2,
       nomLieu:'Yaounde',
       pays: 'cameroun',
-      imageUrl:'asset/img2.png',
+      imageUrl:'assets/img2.jpg',
       region: 'centre',
       nomPersonne:'Nguemnang',
       prenomPersonne: 'Naomie',
@@ -47,14 +47,14 @@ export class ContactService{
       id:3,
       nomLieu:'Yaounde',
       pays: 'cameroun',
-      imageUrl:'asset/img.png',
+      imageUrl:'assets/img_2.png',
       region: 'centre',
       nomPersonne:'Linemann',
       prenomPersonne: 'Anton',
       identifiantIG: 'itsAnton',
       numTel: 145,
       facebook: 'Aucun',
-      photoUrl:'assets/img_1.png',
+      photoUrl:'assets/img_2.png',
       email:'anton.linemann@hotmail.com',
       activites:"fleuve"
     }

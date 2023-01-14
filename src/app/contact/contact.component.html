@@ -1,9 +1,7 @@
+  <!--
+    CODE DÉPART
 
-
-
-
-
-  <div class="flex-container">
+    <div class="flex-container">
     <div class="card">
       <img [src]="contact.photoUrl" [alt]="contact.prenomPersonne" style="width:100%">
       <div class="container">
@@ -13,6 +11,22 @@
         <p>Email:{{contact.email}}</p>
         <p><button class="button">Contact</button></p>
       </div>
+    </div>
+  </div>-->
+
+    <div class="card">
+    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+      <img [src]="contact.photoUrl" [alt]="contact.prenomPersonne" class="img-fluid"/>
+      <a href="#!">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h2>Nom: {{contact.nomPersonne}} Prenom: {{contact.prenomPersonne}}</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Tel: {{contact.numTel}}</p>
+        <p>Email: {{contact.email}}</p>
+        <a href="#!" class="btn btn-primary">Contact</a>
     </div>
   </div>
 

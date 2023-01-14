@@ -1,3 +1,13 @@
-<div class="container-flex">
-  <app-contact *ngFor="let contact of contacts"[contact]="contact"></app-contact>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 sm-6">
+      <app-contact [contact]="contacts[0]"></app-contact>
+    </div>
+    <div class="col-md-4 sm-6">
+      <app-contact [contact]="contacts[1]"></app-contact>
+    </div>
+    <div class="col-md-4 sm-6">
+      <app-contact [contact]="contacts[2]"></app-contact>
+    </div>
+  </div>
 </div>
