@@ -1,0 +1,60 @@
+<main>
+<div class="login-box">
+  <div class="form-card">
+    <h2>NOUVELLE DESTINATION</h2>
+    <form [formGroup]="destinationForm">
+
+          <div class="user-box">
+            <label for="nom">Nom du lieu</label>
+            <input type="text" id="nom" formControlName="nom"  placeholder="">
+          </div>
+
+          <div class="user-box">
+            <label for="pays">Pays</label>
+            <input type="text" id="pays" formControlName="pays" placeholder="">
+          </div>
+
+          <div class="user-box">
+            <label for="image">Image</label>
+            <input type="text" id="image" formControlName="image" placeholder="">
+          </div>
+
+          <div class="user-box">
+            <label for="region">Region</label>
+            <input type="text" id="region" formControlName="region" placeholder="">
+          </div>
+      <div class="user-box">
+        <label for="continent">Continent</label>
+        <input type="text" id="continent" formControlName="continent" placeholder="">
+      </div>
+          <div class="user-box">
+            <label for="activités">Activités</label>
+            <input type="text" id="activités" formControlName="region" placeholder="">
+
+          </div>
+      <div class="user-box">
+        <label for="prix">prix</label>
+        <input type="text" id="prix" formControlName="prix" placeholder="">
+      </div>
+
+          <div *ngIf="destinationForm.invalid">
+
+            <span class="help-block" style="color: darkred"> champ obligatoire </span>
+          </div>
+          <div class="action-buttons">
+            <button type="submit" (click)="onSubmit()" [disabled]="destinationForm.invalid">Enregistrer</button>
+          </div>
+
+
+    </form>
+  </div>
+
+  <div class="contact-card" *ngIf="destinationPreview$ | async as contact">
+    <h2 *ngIf="contact.nomLieu!=null">{{ contact.nomLieu | titlecase }}</h2>
+    <p *ngIf="contact.pays ">{{ contact.pays }}
+    <img *ngIf="contact.imageUrl!=null" [src]="contact.imageUrl" [alt]="contact.imageUrl" />
+    <p *ngIf="contact.activites!=null">{{ contact.activites }}</p>
+    <p><strong *ngIf="contact.region!=null">Réalisateur :</strong> {{contact.region}}<br/>
+  </div>
+  </div>
+</main>

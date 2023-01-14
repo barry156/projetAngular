@@ -1,3 +1,6 @@
+import {registerLocaleData} from "@angular/common";
+import * as fr from '@angular/common/locales/fr';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -12,20 +15,22 @@ import { MainComponent } from './main/main.component';
 import { CarousselComponent } from './caroussel/caroussel.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
+import {ContactComponent} from "./contact/contact.component";
+import {ContactListComponent} from "./contact-list/contact-list.component";
+import {FormComponent} from "./form/form.component";
+import {LandingPageComponent} from "./landing-page/landing-page.component";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { GraphComponent } from './graph/graph.component';
 import { ListeDestinationComponent } from './liste-destination/liste-destination.component';
 import { DestinationComponent } from './destination/destination.component';
 import { UserIconPipe } from './user-icon.pipe';
 import { DestinationDetailComponent } from './destination-detail/destination-detail.component';
-//import { AfiqueComponent } from './afrique/afique.component';
 import { AfriqueComponent } from './afrique/afrique.component';
 import { AsieComponent } from './asie/asie.component';
 import { EuropeComponent } from './europe/europe.component';
 import { OceanieComponent } from './oceanie/oceanie.component';
 import { AmeriqueComponent } from './amerique/amerique.component';
 import { RechercheComponent } from './recherche/recherche.component';
-
-
 
 @NgModule({
   declarations: [
@@ -35,6 +40,10 @@ import { RechercheComponent } from './recherche/recherche.component';
     CarousselComponent,
     SidebarComponent,
     FooterComponent,
+    ContactComponent,
+    ContactListComponent,
+    FormComponent,
+    LandingPageComponent,
     GraphComponent,
     ListeDestinationComponent,
     DestinationComponent,
@@ -51,15 +60,19 @@ import { RechercheComponent } from './recherche/recherche.component';
      OceanieComponent,
        RechercheComponent
 
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    NgbModule,
+    ReactiveFormsModule,
+    FormsModule,
     NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { constructor() {
+  registerLocaleData(fr.default);
+}}
+

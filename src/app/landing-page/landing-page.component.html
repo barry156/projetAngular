@@ -1,0 +1,33 @@
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<main>
+  <div class="title">
+    <h1 id="title">Contact Form</h1>
+    <p id="description">Merci d'entrer en contact avec nous en cas de besoin</p>
+  </div>
+  <form #emailForm="ngForm" (ngSubmit)="onSunmitContact(emailForm)" id="survey-form">
+
+    <label for="name" id="name-label" class="uno">Nom</label>
+    <input type="text" id="name" placeholder="Entrez votre nom " required>
+
+    <label for="prenom" id="prenom-label" class="uno">Prenom</label>
+    <input type="text" id="name" placeholder="Entrez votre prenom " required>
+
+
+    <label for="email" id="email-label" class="uno">Email</label>
+    <input type="email" id="email" placeholder="Entrez votre email"  required>
+
+    <label for="age" id="number-label" class="uno">Age (optionel)</label>
+    <input type="number" id="number" placeholder="Entrez votre age">
+
+
+
+    <p class="uno">Avez vous des suggestions</p>
+    <textarea id="message" class="textarea uno" name="message" placeholder="Enter your message here..."></textarea>
+
+
+
+    <button type="submit" id="submit" class="submit uno">Envoyer!</button>
+
+  </form>
+
+</main>

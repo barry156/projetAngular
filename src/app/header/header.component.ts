@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 import {DestinationService} from "../services/destination.service";
 
@@ -10,6 +11,7 @@ import {DestinationService} from "../services/destination.service";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
   constructor(private service:DestinationService) {
 
   }
