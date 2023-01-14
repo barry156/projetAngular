@@ -12,6 +12,6 @@ export class HeaderComponent {
   ngOnInit(): void{
   }
   onAddNewDestination() {
-    this.router.navigateByUrl('/destination');
+    this.router.navigateByUrl('/newDestination');
   }
 }
