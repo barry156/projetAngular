@@ -15,7 +15,7 @@ export class AfriqueComponent  {
   constructor(private destinationService: DestinationService, public router: Router) {
   }
   ngOnInit():void {
-    this.destinations=this.destinationService.getAfriquedestinations();
+    this.destinations=this.destinationService.getAfriqueDestinations();
   }
 
 

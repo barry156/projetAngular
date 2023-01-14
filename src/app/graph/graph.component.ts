@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import {Chart, ChartConfiguration, ChartItem, registerables} from 'node_modules/chart.js'
+import { DestinationService } from '../services/destination.service';
 
 @Component({
   selector: 'app-graph',
@@ -13,10 +14,16 @@ export class GraphComponent implements OnInit{
   continentAmountSA!:number;
   continentAmountAsia!:number;
   continentAmountOceania!:number;
-  continentAmountAntarctica!:number;
   cnv!:any;
 
-  constructor(){
+  constructor(destinationService :DestinationService){
+    this.continentAmountAfrica=destinationService.getAfriqueDestinations().length;
+    this.continentAmountEurope=destinationService.getEuropeDestinations().length;
+    this.continentAmountNA=destinationService.getNADestinations().length;
+    this.continentAmountSA=destinationService.getSADestinations().length;
+    this.continentAmountAsia=destinationService.getAsieDestinations().length;
+    this.continentAmountOceania=destinationService.getOceanieDestinations().length;
+
   }
 
 
@@ -29,13 +36,6 @@ export class GraphComponent implements OnInit{
   ngOnInit(): void {
     this.cnv=document.getElementById("my-chart");
     this.cnv.style.backgroundColor = "#add8e6"
-    this.continentAmountAfrica=27;
-    this.continentAmountEurope=50;
-    this.continentAmountNA=33;
-    this.continentAmountSA=15;
-    this.continentAmountAsia=22;
-    this.continentAmountOceania=17;
-    this.continentAmountAntarctica=1;
     this.createChart()
 
 }
@@ -44,12 +44,12 @@ export class GraphComponent implements OnInit{
 createChart(): void {
   Chart.register(...registerables);
   const data = {
-    labels: ['Afrique','Europe','Amérique du Nord','Amérique du Sud','Asie','Océanie','Antarctique'],
+    labels: ['Afrique','Europe','Amérique du Nord','Amérique du Sud','Asie','Océanie'],
     datasets: [{
       label: 'Destinations par Continent',
       backgroundColor: 'rgb(240, 230, 81)',
       borderColor: 'rgb(240, 230, 81)',
-      data: [this.continentAmountAfrica, this.continentAmountEurope, this.continentAmountNA, this.continentAmountSA,  this.continentAmountAsia, this.continentAmountOceania,this.continentAmountAntarctica],
+      data: [this.continentAmountAfrica, this.continentAmountEurope, this.continentAmountNA, this.continentAmountSA,  this.continentAmountAsia, this.continentAmountOceania],
     }]
 };
 
