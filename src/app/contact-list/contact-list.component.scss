@@ -1,0 +1,11 @@
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .img [src] {
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+  }
+}
