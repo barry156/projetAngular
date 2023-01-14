@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { CarousselComponent } from './caroussel/caroussel.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
+import { GraphComponent } from './graph/graph.component';
 import { ListeDestinationComponent } from './liste-destination/liste-destination.component';
 import { DestinationComponent } from './destination/destination.component';
 import { UserIconPipe } from './user-icon.pipe';
@@ -20,6 +22,7 @@ import { OceanieComponent } from './oceanie/oceanie.component';
 import { AmeriqueComponent } from './amerique/amerique.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +31,7 @@ import { AmeriqueComponent } from './amerique/amerique.component';
     CarousselComponent,
     SidebarComponent,
     FooterComponent,
+    GraphComponent,
     ListeDestinationComponent,
     DestinationComponent,
     UserIconPipe,
@@ -36,12 +40,18 @@ import { AmeriqueComponent } from './amerique/amerique.component';
     AfriqueComponent,
      AsieComponent,
      EuropeComponent,
+
      OceanieComponent,
-     AmeriqueComponent
+     AmeriqueComponent,
+
+     OceanieComponent
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     NgbModule
   ],
   providers: [],
