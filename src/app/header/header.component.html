@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <nav class="navbar navbar-expand-lg   navbar-dark bg-info">
   <a routerLink="home" routerLinkActive="active" >Home</a>
   <a routerLink="team" routerLinkActive="active">Contact us</a>
 
   <a routerLink="contact" routerLinkActive="active">Team</a>
   <button (click)="onAddNewDestination()">Ajouter une destination</button>
+=======
+<!--<nav class="navbar navbar-expand-lg   navbar-dark bg-info">
+>>>>>>> 975161f6b1d0c590c66c3b9c95e685b1ddb4059d
   <a class="navbar-brand " href="#" routerLink="caroussel" routerLinkActive="active">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -12,20 +16,20 @@
   <div class="collapse navbar-collapse " id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#" routerLink="caroussel" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link"  routerLink="caroussel" routerLinkActive="active">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" routerLink="graph" routerLinkActive="active">Graph</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#" routerLink="afrique" routerLinkActive="active">Afrique</a>
+          <a class="dropdown-item" href="#">Asie</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Europe</a>
         </div>
       </li>
       <li class="nav-item " >
@@ -53,5 +57,42 @@
 
   </div>
 
+</nav>-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active"routerLink="caroussel" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="graph" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Graphe</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#" href="#" routerLink="alldestinations" routerLinkActive="active">Nos destinations</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="afriquedestination" routerLinkActive="active">Afrique</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" routerLink="asiedestination" routerLinkActive="active">Asie</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
 </nav>
+
 
