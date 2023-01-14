@@ -42,6 +42,8 @@ export class GraphComponent implements OnInit,OnDestroy{
     this.cnv=document.getElementById("my-chart");
     this.cnv.style.backgroundColor = "#add8e6";
 
+
+
     if(!this.chartContainer){
       this.createChart();
     }
@@ -75,7 +77,10 @@ export class GraphComponent implements OnInit,OnDestroy{
     scales: {
       y: {
         beginAtZero: true,
-        display: false,
+        display: true,
+        ticks:{
+          stepSize:1
+        }
       }
     }
   }
