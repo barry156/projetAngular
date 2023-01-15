@@ -1,7 +1,7 @@
 import {registerLocaleData} from "@angular/common";
 import * as fr from '@angular/common/locales/fr';
 
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
@@ -23,7 +23,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { GraphComponent } from './graph/graph.component';
 import { ListeDestinationComponent } from './liste-destination/liste-destination.component';
 import { DestinationComponent } from './destination/destination.component';
-import { UserIconPipe } from './user-icon.pipe';
+import { UserIconPipe } from './pipe/user-icon.pipe';
 import { DestinationDetailComponent } from './destination-detail/destination-detail.component';
 import { AfriqueComponent } from './afrique/afrique.component';
 import { AsieComponent } from './asie/asie.component';
@@ -31,9 +31,11 @@ import { EuropeComponent } from './europe/europe.component';
 import { OceanieComponent } from './oceanie/oceanie.component';
 import { AmeriqueComponent } from './amerique/amerique.component';
 import { RechercheComponent } from './recherche/recherche.component';
-import { FilterPipe } from './filter.pipe';
-import { SearchEmployeePipe } from './search-employee.pipe';
+import { FilterPipe } from './pipe/filter.pipe';
+import { SearchEmployeePipe } from './pipe/search-employee.pipe';
+import { SearchDestinationPipe } from "./pipe/search-destination.pipe";
 import { EmployeeComponent } from './employee/employee.component';
+import { SearchDestinationComponent } from './search-destination/search-destination.component';
 
 @NgModule({
   declarations: [
@@ -63,8 +65,10 @@ import { EmployeeComponent } from './employee/employee.component';
      OceanieComponent,
        RechercheComponent,
        FilterPipe,
+       SearchDestinationPipe,
        SearchEmployeePipe,
-       EmployeeComponent
+       EmployeeComponent,
+       SearchDestinationComponent
 
   ],
   imports: [
@@ -75,7 +79,10 @@ import { EmployeeComponent } from './employee/employee.component';
     FormsModule,
     NgbModule
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue:'fr-FR'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { constructor() {

@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {destination} from "../model/destination.model";
 import {Router} from "@angular/router";
-import{UserIconPipe} from "../user-icon.pipe";
+import{UserIconPipe} from "../pipe/user-icon.pipe";
 import{DestinationService} from "../services/destination.service";
 
 @Component({
