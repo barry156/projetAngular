@@ -30,7 +30,6 @@ import { RechercheComponent } from './recherche/recherche.component';
 import { FilterPipe } from './pipe/filter.pipe';
 import { SearchEmployeePipe } from './pipe/search-employee.pipe';
 import { SearchDestinationPipe } from "./pipe/search-destination.pipe";
-import { EmployeeComponent } from './employee/employee.component';
 import { SearchDestinationComponent } from './search-destination/search-destination.component';
 import { AmeriqueNordComponent } from './amerique-nord/amerique-nord.component';
 import { AmeriqueSudComponent } from './amerique-sud/amerique-sud.component';
@@ -54,21 +53,17 @@ import { AmeriqueSudComponent } from './amerique-sud/amerique-sud.component';
     UserIconPipe,
     DestinationDetailComponent,
 
-    AfriqueComponent,
+     AfriqueComponent,
      AsieComponent,
      EuropeComponent,
-
      OceanieComponent,
-
-     OceanieComponent,
-       RechercheComponent,
-       FilterPipe,
-       SearchDestinationPipe,
-       SearchEmployeePipe,
-       EmployeeComponent,
-       SearchDestinationComponent,
-       AmeriqueNordComponent,
-       AmeriqueSudComponent
+     RechercheComponent,
+     FilterPipe,
+     SearchDestinationPipe,
+     SearchEmployeePipe,
+     SearchDestinationComponent,
+     AmeriqueNordComponent,
+     AmeriqueSudComponent
 
 
   ],
