@@ -40,7 +40,7 @@ export class ContactService{
       nomPersonne:'Linemann',
       prenomPersonne: 'Anton',
       identifiantIG: 'itsAnton',
-      numTel: 145,
+      numTel: 33749495028,
       facebook: 'Aucun',
       photoUrl:'assets/contacts/Anton.jpg',
       email:'anton.linemann@hotmail.com',
