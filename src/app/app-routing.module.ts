@@ -13,6 +13,10 @@ import {AfriqueComponent} from "./afrique/afrique.component";
 import {AsieComponent} from "./asie/asie.component";
 import {EuropeComponent} from "./europe/europe.component";
 import {EmployeeComponent} from "./employee/employee.component";
+import {OceanieComponent} from "./oceanie/oceanie.component";
+import {AmeriqueComponent} from "./amerique/amerique.component";
+import {AmeriqueNordComponent} from "./amerique-nord/amerique-nord.component";
+import {AmeriqueSudComponent} from "./amerique-sud/amerique-sud.component";
 
 
 const routes: Routes = [
@@ -30,7 +34,11 @@ const routes: Routes = [
   { path: 'afriquedestination', component: AfriqueComponent},
   { path: 'asiedestination', component: AsieComponent},
   { path: 'europedestination', component: EuropeComponent},
-  { path: 'employee', component: EmployeeComponent}
+  { path: 'ameriquedestination', component:AmeriqueComponent},
+  { path: 'oceaniedestination', component: OceanieComponent},
+  { path: 'employee', component: EmployeeComponent},
+  { path: 'nadestination', component: AmeriqueNordComponent},
+  { path: 'sadestination', component: AmeriqueSudComponent},
 
 
 
