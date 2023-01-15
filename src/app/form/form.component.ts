@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validator, Validators} from "@angular/forms";
 import {map,Observable} from "rxjs";
-import {ContactModel} from "../model/contact.model";
-import {ContactService} from "../services/contact.service";
 import {Router} from "@angular/router";
+import {destination} from "../model/destination.model";
+import {DestinationService} from "../services/destination.service";
 
 @Component({
   selector: 'app-form',
@@ -12,33 +12,28 @@ import {Router} from "@angular/router";
 })
 export class FormComponent implements OnInit {
   destinationForm!: FormGroup;
-  destinationPreview$ !: Observable<ContactModel>;
+  destinationPreview$ !: Observable<destination>;
 
   constructor(private formBuilder: FormBuilder,
-              private contactService: ContactService,
+              private destinationService: DestinationService,
               private router: Router) {
 
   }
   ngOnInit():void {
     this.destinationForm= this.formBuilder.group({
 
-      nomLieu:[null, [Validators.required]],
+      nomlieu:[null, [Validators.required]],
       pays:[null,[Validators.required]],
-      imageUrl:[null,[Validators.required]],
-      region:[null,[Validators.required]],
-      activites:[null],
-    }, {
-      updateOn: 'blur'});
-    this.destinationPreview$=this.destinationForm.valueChanges.pipe(
-      map(formValue=> ({
-        ...formValue,
-        id:0
-        })
-      )
-    )
+      continent:[null,[Validators.required]],
+      region:[null],
+      prix:[null],
+      afficheUrl:[null,[Validators.required]],
+
+    });
   }
 
-  onSubmit() {
-    this.router.navigateByUrl('/destination');
+  onSubmitForm() {
+    this.destinationService.addDestination(this.destinationForm.value);
+    this.router.navigateByUrl('/alldestinations');
   }
 }

@@ -5,9 +5,6 @@ export class destination {
   continent: string;
   region: string;
   prix: number;
-
-
-
   afficheUrl: string;
   like: number;
   note?: number;
