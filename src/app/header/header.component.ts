@@ -1,17 +1,31 @@
 import { Component,OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 
+import {DestinationService} from "../services/destination.service";
+
+
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  constructor(private router: Router) {
+
+  constructor(private service:DestinationService,private router:Router) {
+
   }
-  ngOnInit(): void{
+
+
+  press() {
+    this.service.islogg = true;
   }
+
+
+
+
   onAddNewDestination() {
     this.router.navigateByUrl('/newDestinationForm');
   }
+
 }

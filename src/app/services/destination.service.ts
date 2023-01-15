@@ -17,6 +17,7 @@ export class DestinationService {
       prix:25007,
       afficheUrl: 'assets/destinations/afrique/gizeh/gizeh1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg"],
       note: 4,
     },
     {
@@ -28,6 +29,7 @@ export class DestinationService {
       prix:24500,
       afficheUrl: 'assets/destinations/asie/himalaya/hima1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       note: 5,
     },
     {
@@ -39,6 +41,7 @@ export class DestinationService {
       prix: 3500,
       afficheUrl: 'assets/membres/membres/membre1.jpg',
       like: 173,
+      galerie:['assets/membres/membres/membre1.jpg', 'assets/membres/membres/membre1.jpg','assets/membre/membres/membre1.jpg' ],
       note: 3,
     },
 
@@ -51,6 +54,7 @@ export class DestinationService {
       prix: 5500,
       afficheUrl: 'assets/membres/membres/membre1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       note: 3,
     },
 
@@ -63,6 +67,7 @@ export class DestinationService {
       prix: 5000,
       afficheUrl: 'assets/destinations/oceanie/sydney/syd1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       note: 3,
     },
     {
@@ -74,6 +79,7 @@ export class DestinationService {
       prix: 4000,
       afficheUrl: 'assets/destinations/ameriqueNord/liberte1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       note: 3,
     },
     {
@@ -84,6 +90,7 @@ export class DestinationService {
       region: "Cusco",
       prix: 5000,
       afficheUrl: 'assets/membres/membres/membre1.jpg',
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       like: 173,
       note: 3,
     },
@@ -95,6 +102,7 @@ export class DestinationService {
       region: "Salerno",
       prix: 2500,
       afficheUrl: 'assets/membres/membres/membre1.jpg',
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       like: 173,
       note: 3,
     },
@@ -106,6 +114,7 @@ export class DestinationService {
       region: "Catalogne",
       prix: 1000,
       afficheUrl: 'assets/membres/membres/membre1.jpg',
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       like: 173,
       note: 3,
     },
@@ -118,6 +127,7 @@ export class DestinationService {
       prix: 1200,
       afficheUrl: 'assets/membres/membres/membre1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg"],
       note: 3,
     },
     {
@@ -129,6 +139,7 @@ export class DestinationService {
       prix: 3500,
       afficheUrl: 'assets/membres/membres/membre1.jpg',
       like: 173,
+      galerie:["assets/membres/membres/membre1.jpg", "assets/membres/membres/membre1.jpg","assets/membres/membres/membre1.jpg" ],
       note: 3,
     },
     ]
@@ -178,6 +189,29 @@ export class DestinationService {
     return this.destinations.filter((el)=>el.continent=="Amérique du Sud");
 
 
+  }
+  islogg!:boolean;
+   isChecked1!:boolean;
+   isChecked2!:boolean;
+  setIsChecked1(value:boolean){
+
+    this.isChecked1=value;
+  }
+  setIsChecked2(value:boolean) {
+
+    this.isChecked2=value;
+  }
+  getIsChecked1():boolean {
+
+     return this.isChecked1;
+  }
+  getIsChecked2() :boolean {
+
+    return this.isChecked2;
+  }
+  getIsLogg() :boolean {
+
+    return this.islogg;
   }
 
 

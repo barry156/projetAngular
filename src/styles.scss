@@ -14,6 +14,12 @@ app-footer {
   width:100%;
   height:500px;
 }
+//stylisation du tableau des employees
+table td img {
+  width:100px;
+  height:100px;
+}// sytlisation de la navbar
+
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+
