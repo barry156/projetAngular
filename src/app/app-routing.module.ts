@@ -20,9 +20,8 @@ const routes: Routes = [
 
 
   { path:'', redirectTo: 'caroussel', pathMatch: 'full'},
-  {path: 'home', component: LandingPageComponent},
-  {path: 'contact', component: ContactListComponent},
-  {path: 'newDestination', component: FormComponent},
+  { path: 'contact', component: ContactListComponent},
+  { path: 'newDestinationForm', component: FormComponent},
   { path: 'caroussel', component: CarousselComponent},
   { path: "graph", component:GraphComponent},
   { path: 'alldestinations', component: ListeDestinationComponent},
