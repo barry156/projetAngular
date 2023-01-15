@@ -8,58 +8,45 @@
 
       <div class="form-outline mb-4 text-white" >
         <label for="nom">Nom du lieu<sup>*</sup></label>
-        <input type="text" id="nom" class="form-control"  placeholder="">
+        <input type="text" id="nom" class="form-control" formControlName="nomlieu"  placeholder="">
       </div>
 
       <div class="form-outline mb-4 text-white">
         <label for="pays">Pays<sup>*</sup></label>
-        <input type="text" id="pays" class="form-control" placeholder="">
+        <input type="text" id="pays" class="form-control" formControlName="pays" placeholder="">
       </div>
 
-      <div class="form-outline mb-4 text-white">
-        <label for="image">Image<sup>*</sup></label>
-        <input type="text" id="image" class="form-control" placeholder="">
-      </div>
-
-      <div class="form-outline mb-4 text-white">
-        <label for="region">Region<sup>*</sup></label>
-        <input type="text" id="region" class="form-control" placeholder="">
-      </div>
       <div class="form-outline mb-4 text-white">
         <label for="continent">Continent<sup>*</sup></label>
-        <input type="text" id="continent" class="form-control" placeholder="">
+        <input type="text" id="continent" class="form-control" formControlName="continent" placeholder="">
       </div>
 
       <div class="form-outline mb-4 text-white">
-        <label for="prix">prix<sup>*</sup></label>
-        <input type="text" id="prix" class="form-control" placeholder="">
+        <label for="region">Region</label>
+        <input type="text" id="region" class="form-control" formControlName="region" placeholder="">
       </div>
 
+      <div class="form-outline mb-4 text-white">
+        <label for="prix">prix</label>
+        <input type="text" id="prix" class="form-control" formControlName="prix" placeholder="">
+      </div>
+
+      <div class="form-outline mb-4 text-white">
+        <label for="afficheUrl">Image<sup>*</sup></label>
+        <input type="text" id="afficheUrl" class="form-control" formControlName="afficheUrl" placeholder="">
+      </div>
       <div *ngIf="destinationForm.invalid">
 
         <span class="help-block" style="color: darkred"> Veuillez remplir chacun des champs </span>
       </div>
       <div class="action-buttons">
         <button type="submit" class="btn btn-light btn-lg"
-                data-mdb-ripple-color="dark" (click)="onSubmit()" [disabled]="destinationForm.invalid">Enregistrer</button>
+                data-mdb-ripple-color="dark" (click)="onSubmitForm()" [disabled]="destinationForm.invalid">Enregistrer</button>
       </div>
 
 
     </form>
   </div>
 
-<div class="contact-card" *ngIf="destinationPreview$ | async as contact">
-    <h2 *ngIf="contact.nomlieu!=null">{{ contact.nomlieu | titlecase }}</h2>
-    <p *ngIf="contact.pays ">{{ contact.pays }}
-  <p *ngIf="contact.region!=null">{{ contact.region }}</p>
-  <p><strong *ngIf="contact.continent!=null">Continent :</strong> {{contact.continent}}<br/>
-
-  <img *ngIf="contact.afficheUrl!=null" [src]="contact.afficheUrl" [alt]="contact.afficheUrl" />
-  </div>
-<<<<<<< HEAD
-
-=======
- -->
 
 
->>>>>>> ab6c3b3212b35dc958a75a3a0e4cf0a7edd9e347

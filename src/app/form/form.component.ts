@@ -15,31 +15,25 @@ export class FormComponent implements OnInit {
   destinationPreview$ !: Observable<destination>;
 
   constructor(private formBuilder: FormBuilder,
-              private contactService: DestinationService,
+              private destinationService: DestinationService,
               private router: Router) {
 
   }
   ngOnInit():void {
     this.destinationForm= this.formBuilder.group({
 
-      nomLieu:[null, [Validators.required]],
+      nomlieu:[null, [Validators.required]],
       pays:[null,[Validators.required]],
-      imageUrl:[null,[Validators.required]],
-      region:[null,[Validators.required]],
-      activites:[null],
-    }, {
-      updateOn: 'blur'});
-    this.destinationPreview$=this.destinationForm.valueChanges.pipe(
-      map(formValue=> ({
-        ...formValue,
-        id:0
-        })
-      )
-    )
+      continent:[null,[Validators.required]],
+      region:[null],
+      prix:[null],
+      afficheUrl:[null,[Validators.required]],
+
+    });
   }
 
-  onSubmit() {
-    this.contactService.addDestination(this.destinationForm.value);
-    this.router.navigateByUrl('/destination');
+  onSubmitForm() {
+    this.destinationService.addDestination(this.destinationForm.value);
+    this.router.navigateByUrl('/alldestinations');
   }
 }

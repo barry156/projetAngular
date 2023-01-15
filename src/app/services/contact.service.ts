@@ -17,7 +17,7 @@ export class ContactService{
       identifiantIG: 'itsBarry',
       numTel: 145,
       facebook: 'Aucun',
-      photoUrl:'assets/contacts/img_3.png',
+      photoUrl:'assets/contacts/Mamadou.jpg',
       email:'siradio156@gmail.com',
       activites:"fleuve"
     },
@@ -29,7 +29,7 @@ export class ContactService{
       identifiantIG: 'itsnaomie',
       numTel: 4917671611464,
       facebook: 'Aucun',
-      photoUrl:'assets/contacts/img2.jpg',
+      photoUrl:'assets/contacts/Naomie.jpg',
       email:'naomienguemnang@gmail.com',
       activites:"fleuve"
 
@@ -42,7 +42,7 @@ export class ContactService{
       identifiantIG: 'itsAnton',
       numTel: 145,
       facebook: 'Aucun',
-      photoUrl:'assets/contacts/img_2.png',
+      photoUrl:'assets/contacts/Anton.jpg',
       email:'anton.linemann@hotmail.com',
       activites:"fleuve"
     }
