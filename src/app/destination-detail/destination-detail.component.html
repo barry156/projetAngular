@@ -1,5 +1,5 @@
 <!-- Gallery -->
-<div class="row">
+<div *ngIf="destination.id<20" class="row">
   <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
 
     <img
@@ -45,4 +45,13 @@
       alt="image se charge"
     />
   </div>
+</div>
+
+
+<div *ngIf="destination.id>=20" class="row">
+  <img
+      [src]="destination.afficheUrl"
+      id="imageExterne"
+      alt="image non existante"
+    />
 </div>
