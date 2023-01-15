@@ -7,7 +7,7 @@
         <p class="card-text">
           Pays: {{destination.pays}}
         </p>
-        <p> Prix: {{destination.prix}}€</p>
+        <p> Prix: {{destination.prix | currency:'EUR':true}}</p>
         <p>Continent: {{destination.continent}}</p>
         <p style="background-color:red;">{{destination.note | userIcon}}</p>
         <button class="bg-primary text-white" (click)="onDetailDestination()">Voir plus de photos</button>
