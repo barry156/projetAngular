@@ -31,6 +31,9 @@ import { EuropeComponent } from './europe/europe.component';
 import { OceanieComponent } from './oceanie/oceanie.component';
 import { AmeriqueComponent } from './amerique/amerique.component';
 import { RechercheComponent } from './recherche/recherche.component';
+import { FilterPipe } from './filter.pipe';
+import { SearchEmployeePipe } from './search-employee.pipe';
+import { EmployeeComponent } from './employee/employee.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +61,10 @@ import { RechercheComponent } from './recherche/recherche.component';
      AmeriqueComponent,
 
      OceanieComponent,
-       RechercheComponent
+       RechercheComponent,
+       FilterPipe,
+       SearchEmployeePipe,
+       EmployeeComponent
 
   ],
   imports: [

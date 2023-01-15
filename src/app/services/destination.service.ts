@@ -164,7 +164,28 @@ export class DestinationService {
 
   }
   islogg!:boolean;
+   isChecked1!:boolean;
+   isChecked2!:boolean;
+  setIsChecked1(value:boolean){
 
+    this.isChecked1=value;
+  }
+  setIsChecked2(value:boolean) {
+
+    this.isChecked2=value;
+  }
+  getIsChecked1():boolean {
+
+     return this.isChecked1;
+  }
+  getIsChecked2() :boolean {
+
+    return this.isChecked2;
+  }
+  getIsLogg() :boolean {
+
+    return this.islogg;
+  }
 
 
 }

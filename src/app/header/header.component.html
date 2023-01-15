@@ -50,9 +50,11 @@
   </div>
 
 </nav>-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand"  routerLink="" routerLinkActive="active" >Home</a>
+<nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color:#0DCAF0;" >
+  <div class="container-fluid ">
+    <a class="navbar-brand"  routerLink="" routerLinkActive="active" ><img src="../../favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      site de voyage
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -61,14 +63,9 @@
         <li class="nav-item">
           <a class="nav-link active"routerLink="caroussel" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Caroussel</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" routerLink="graph" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Graphe</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">nous contacter</a>
-        </li>
-
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
@@ -81,13 +78,16 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link" routerLink="employee" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">our team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contactForm" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Nous contacter</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active"routerLink="contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About us</a>
         </li>
         <li class="nav-item">
-          <a  class="nav-link" href="" role="button">Ajouter une destination</a>
+          <a  class="nav-link"  role="button" (click)="onAddNewDestination()">Ajouter une destination</a>
         </li>
       </ul>
       <form class="d-flex">

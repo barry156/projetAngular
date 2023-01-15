@@ -12,15 +12,20 @@ import {DestinationService} from "../services/destination.service";
 })
 export class HeaderComponent {
 
-  constructor(private service:DestinationService) {
+  constructor(private service:DestinationService,private router:Router) {
 
   }
 
+
   press() {
-    this.service.islogg=true;
+    this.service.islogg = true;
+  }
 
 
 
+
+  onAddNewDestination() {
+    this.router.navigateByUrl('/newDestinationForm');
   }
 
 }

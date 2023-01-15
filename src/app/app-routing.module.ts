@@ -12,6 +12,7 @@ import {DestinationDetailComponent} from "./destination-detail/destination-detai
 import {AfriqueComponent} from "./afrique/afrique.component";
 import {AsieComponent} from "./asie/asie.component";
 import {EuropeComponent} from "./europe/europe.component";
+import {EmployeeComponent} from "./employee/employee.component";
 
 
 const routes: Routes = [
@@ -20,9 +21,9 @@ const routes: Routes = [
 
 
   { path:'', redirectTo: 'caroussel', pathMatch: 'full'},
-  {path: 'home', component: LandingPageComponent},
-  {path: 'contact', component: ContactListComponent},
-  {path: 'newDestination', component: FormComponent},
+  { path: 'contactForm', component: LandingPageComponent},
+  { path: 'contact', component: ContactListComponent},
+  { path: 'newDestinationForm', component: FormComponent},
   { path: 'caroussel', component: CarousselComponent},
   { path: "graph", component:GraphComponent},
   { path: 'alldestinations', component: ListeDestinationComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'afriquedestination', component: AfriqueComponent},
   { path: 'asiedestination', component: AsieComponent},
   { path: 'europedestination', component: EuropeComponent},
+  { path: 'employee', component: EmployeeComponent}
 
 
 
