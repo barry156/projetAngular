@@ -7,41 +7,37 @@
 
 
       <div class="form-outline mb-4 text-white" >
-        <label for="nom">Nom du lieu</label>
+        <label for="nom">Nom du lieu<sup>*</sup></label>
         <input type="text" id="nom" class="form-control"  placeholder="">
       </div>
 
       <div class="form-outline mb-4 text-white">
-        <label for="pays">Pays</label>
+        <label for="pays">Pays<sup>*</sup></label>
         <input type="text" id="pays" class="form-control" placeholder="">
       </div>
 
       <div class="form-outline mb-4 text-white">
-        <label for="image">Image</label>
+        <label for="image">Image<sup>*</sup></label>
         <input type="text" id="image" class="form-control" placeholder="">
       </div>
 
       <div class="form-outline mb-4 text-white">
-        <label for="region">Region</label>
+        <label for="region">Region<sup>*</sup></label>
         <input type="text" id="region" class="form-control" placeholder="">
       </div>
       <div class="form-outline mb-4 text-white">
-        <label for="continent">Continent</label>
+        <label for="continent">Continent<sup>*</sup></label>
         <input type="text" id="continent" class="form-control" placeholder="">
       </div>
-      <div class="form-outline mb-4 text-white ">
-        <label for="activités">Activités</label>
-        <input type="text" id="activités" class="form-control" placeholder="">
 
-      </div>
       <div class="form-outline mb-4 text-white">
-        <label for="prix">prix</label>
+        <label for="prix">prix<sup>*</sup></label>
         <input type="text" id="prix" class="form-control" placeholder="">
       </div>
 
       <div *ngIf="destinationForm.invalid">
 
-        <span class="help-block" style="color: darkred"> champ obligatoire </span>
+        <span class="help-block" style="color: darkred"> Veuillez remplir chacun des champs </span>
       </div>
       <div class="action-buttons">
         <button type="submit" class="btn btn-light btn-lg"
@@ -52,19 +48,18 @@
     </form>
   </div>
 
- <!--
 <div class="contact-card" *ngIf="destinationPreview$ | async as contact">
-    <h2 *ngIf="contact.nomLieu!=null">{{ contact.nomLieu | titlecase }}</h2>
+    <h2 *ngIf="contact.nomlieu!=null">{{ contact.nomlieu | titlecase }}</h2>
     <p *ngIf="contact.pays ">{{ contact.pays }}
-      <img *ngIf="contact.imageUrl!=null" [src]="contact.imageUrl" [alt]="contact.imageUrl" />
-    <p *ngIf="contact.activites!=null">{{ contact.activites }}</p>
-    <p><strong *ngIf="contact.region!=null">Réalisateur :</strong> {{contact.region}}<br/>
+  <p *ngIf="contact.region!=null">{{ contact.region }}</p>
+  <p><strong *ngIf="contact.continent!=null">Continent :</strong> {{contact.continent}}<br/>
+
+  <img *ngIf="contact.afficheUrl!=null" [src]="contact.afficheUrl" [alt]="contact.afficheUrl" />
   </div>
 <<<<<<< HEAD
-</div>
 
 =======
  -->
-  </div>
+
 
 >>>>>>> ab6c3b3212b35dc958a75a3a0e4cf0a7edd9e347

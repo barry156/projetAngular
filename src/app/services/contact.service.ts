@@ -27,7 +27,7 @@ export class ContactService{
       nomPersonne:'Nguemnang',
       prenomPersonne: 'Naomie',
       identifiantIG: 'itsnaomie',
-      numTel: 145,
+      numTel: 4917671611464,
       facebook: 'Aucun',
       photoUrl:'assets/contacts/img2.jpg',
       email:'naomienguemnang@gmail.com',

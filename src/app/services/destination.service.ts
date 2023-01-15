@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import{destination} from "../model/destination.model"
+import {ContactModel} from "../model/contact.model";
 
 
 @Injectable({
@@ -214,5 +215,14 @@ export class DestinationService {
     return this.islogg;
   }
 
-
+  addDestination(formValue:{nomlieu:string, pays:string, continent:string, region:string, prix:number, afficheUrl:string}){
+const lieu: destination={
+    ...formValue,
+  like:0,
+  galerie:[ ],
+  note:0,
+    id:this.destinations[this.destinations.length-1].id +1
+  };
+  this.destinations.push(lieu);
+}
 }

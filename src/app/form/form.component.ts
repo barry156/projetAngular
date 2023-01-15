@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validator, Validators} from "@angular/forms";
 import {map,Observable} from "rxjs";
-import {ContactModel} from "../model/contact.model";
-import {ContactService} from "../services/contact.service";
 import {Router} from "@angular/router";
+import {destination} from "../model/destination.model";
+import {DestinationService} from "../services/destination.service";
 
 @Component({
   selector: 'app-form',
@@ -12,10 +12,10 @@ import {Router} from "@angular/router";
 })
 export class FormComponent implements OnInit {
   destinationForm!: FormGroup;
-  destinationPreview$ !: Observable<ContactModel>;
+  destinationPreview$ !: Observable<destination>;
 
   constructor(private formBuilder: FormBuilder,
-              private contactService: ContactService,
+              private contactService: DestinationService,
               private router: Router) {
 
   }
@@ -39,6 +39,7 @@ export class FormComponent implements OnInit {
   }
 
   onSubmit() {
+    this.contactService.addDestination(this.destinationForm.value);
     this.router.navigateByUrl('/destination');
   }
 }
