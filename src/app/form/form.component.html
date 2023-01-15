@@ -1,49 +1,52 @@
-<main>
-<div class="login-box">
+
+<div class="container">
+
   <div class="form-card">
-    <h2>NOUVELLE DESTINATION</h2>
+    <h1 style="color: white">NOUVELLE DESTINATION</h1>
     <form [formGroup]="destinationForm">
 
-          <div class="user-box">
-            <label for="nom">Nom du lieu</label>
-            <input type="text" id="nom" formControlName="nom"  placeholder="">
-          </div>
 
-          <div class="user-box">
-            <label for="pays">Pays</label>
-            <input type="text" id="pays" formControlName="pays" placeholder="">
-          </div>
+      <div class="form-outline mb-4 text-white" >
+        <label for="nom">Nom du lieu</label>
+        <input type="text" id="nom" class="form-control"  placeholder="">
+      </div>
 
-          <div class="user-box">
-            <label for="image">Image</label>
-            <input type="text" id="image" formControlName="image" placeholder="">
-          </div>
+      <div class="form-outline mb-4 text-white">
+        <label for="pays">Pays</label>
+        <input type="text" id="pays" class="form-control" placeholder="">
+      </div>
 
-          <div class="user-box">
-            <label for="region">Region</label>
-            <input type="text" id="region" formControlName="region" placeholder="">
-          </div>
-      <div class="user-box">
+      <div class="form-outline mb-4 text-white">
+        <label for="image">Image</label>
+        <input type="text" id="image" class="form-control" placeholder="">
+      </div>
+
+      <div class="form-outline mb-4 text-white">
+        <label for="region">Region</label>
+        <input type="text" id="region" class="form-control" placeholder="">
+      </div>
+      <div class="form-outline mb-4 text-white">
         <label for="continent">Continent</label>
-        <input type="text" id="continent" formControlName="continent" placeholder="">
+        <input type="text" id="continent" class="form-control" placeholder="">
       </div>
-          <div class="user-box">
-            <label for="activités">Activités</label>
-            <input type="text" id="activités" formControlName="region" placeholder="">
+      <div class="form-outline mb-4 text-white ">
+        <label for="activités">Activités</label>
+        <input type="text" id="activités" class="form-control" placeholder="">
 
-          </div>
-      <div class="user-box">
+      </div>
+      <div class="form-outline mb-4 text-white">
         <label for="prix">prix</label>
-        <input type="text" id="prix" formControlName="prix" placeholder="">
+        <input type="text" id="prix" class="form-control" placeholder="">
       </div>
 
-          <div *ngIf="destinationForm.invalid">
+      <div *ngIf="destinationForm.invalid">
 
-            <span class="help-block" style="color: darkred"> champ obligatoire </span>
-          </div>
-          <div class="action-buttons">
-            <button type="submit" (click)="onSubmit()" [disabled]="destinationForm.invalid">Enregistrer</button>
-          </div>
+        <span class="help-block" style="color: darkred"> champ obligatoire </span>
+      </div>
+      <div class="action-buttons">
+        <button type="submit" class="btn btn-light btn-lg"
+                data-mdb-ripple-color="dark" (click)="onSubmit()" [disabled]="destinationForm.invalid">Enregistrer</button>
+      </div>
 
 
     </form>
@@ -52,9 +55,9 @@
   <div class="contact-card" *ngIf="destinationPreview$ | async as contact">
     <h2 *ngIf="contact.nomLieu!=null">{{ contact.nomLieu | titlecase }}</h2>
     <p *ngIf="contact.pays ">{{ contact.pays }}
-    <img *ngIf="contact.imageUrl!=null" [src]="contact.imageUrl" [alt]="contact.imageUrl" />
+      <img *ngIf="contact.imageUrl!=null" [src]="contact.imageUrl" [alt]="contact.imageUrl" />
     <p *ngIf="contact.activites!=null">{{ contact.activites }}</p>
     <p><strong *ngIf="contact.region!=null">Réalisateur :</strong> {{contact.region}}<br/>
   </div>
-  </div>
-</main>
+</div>
+
