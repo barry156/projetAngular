@@ -4,17 +4,17 @@ import {DestinationService} from "../services/destination.service";
 import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-amerique',
-  templateUrl: './amerique.component.html',
-  styleUrls: ['./amerique.component.scss']
+  selector: 'app-amerique-sud',
+  templateUrl: './amerique-sud.component.html',
+  styleUrls: ['./amerique-sud.component.scss']
 })
-export class AmeriqueComponent {
+export class AmeriqueSudComponent {
   @Input() destinations!: destination[];
 
   constructor(private destinationService: DestinationService, public router: Router) {
   }
   ngOnInit():void {
-    this.destinations=this.destinationService.getAmeriqueDestinations();
+    this.destinations=this.destinationService.getSADestinations();
   }
 
 }

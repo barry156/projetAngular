@@ -6,9 +6,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 
-
-
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
@@ -29,13 +26,15 @@ import { AfriqueComponent } from './afrique/afrique.component';
 import { AsieComponent } from './asie/asie.component';
 import { EuropeComponent } from './europe/europe.component';
 import { OceanieComponent } from './oceanie/oceanie.component';
-import { AmeriqueComponent } from './amerique/amerique.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { FilterPipe } from './pipe/filter.pipe';
 import { SearchEmployeePipe } from './pipe/search-employee.pipe';
 import { SearchDestinationPipe } from "./pipe/search-destination.pipe";
 import { EmployeeComponent } from './employee/employee.component';
 import { SearchDestinationComponent } from './search-destination/search-destination.component';
+import { AmeriqueNordComponent } from './amerique-nord/amerique-nord.component';
+import { AmeriqueSudComponent } from './amerique-sud/amerique-sud.component';
+
 
 @NgModule({
   declarations: [
@@ -60,7 +59,6 @@ import { SearchDestinationComponent } from './search-destination/search-destinat
      EuropeComponent,
 
      OceanieComponent,
-     AmeriqueComponent,
 
      OceanieComponent,
        RechercheComponent,
@@ -68,7 +66,10 @@ import { SearchDestinationComponent } from './search-destination/search-destinat
        SearchDestinationPipe,
        SearchEmployeePipe,
        EmployeeComponent,
-       SearchDestinationComponent
+       SearchDestinationComponent,
+       AmeriqueNordComponent,
+       AmeriqueSudComponent
+
 
   ],
   imports: [
