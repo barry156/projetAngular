@@ -20,11 +20,12 @@ const routes: Routes = [
 
 
 
-  { path:'', redirectTo: 'alldestinations', pathMatch: 'full'},
+  { path:'', redirectTo: 'caroussel', pathMatch: 'full'},
   { path: 'contact', component: ContactListComponent},
   { path: 'rechercheDestination', component: SearchDestinationComponent},
   { path: 'newDestinationForm', component: FormComponent},
   { path: 'caroussel', component: CarousselComponent},
+
   { path: "graph", component:GraphComponent},
   { path: 'alldestinations', component: ListeDestinationComponent},
   { path: 'membres/:id', component: DestinationDetailComponent},

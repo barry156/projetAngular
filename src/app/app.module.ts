@@ -33,6 +33,7 @@ import { SearchDestinationPipe } from "./pipe/search-destination.pipe";
 import { SearchDestinationComponent } from './search-destination/search-destination.component';
 import { AmeriqueNordComponent } from './amerique-nord/amerique-nord.component';
 import { AmeriqueSudComponent } from './amerique-sud/amerique-sud.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { AmeriqueSudComponent } from './amerique-sud/amerique-sud.component';
      SearchEmployeePipe,
      SearchDestinationComponent,
      AmeriqueNordComponent,
-     AmeriqueSudComponent
+     AmeriqueSudComponent,
+     AccueilComponent
 
 
   ],

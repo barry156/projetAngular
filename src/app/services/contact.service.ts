@@ -15,7 +15,7 @@ export class ContactService{
       nomPersonne:'Mamadou',
       prenomPersonne: 'Barry',
       identifiantIG: 'itsBarry',
-      numTel: 145,
+      numTel: 491778501863,
       facebook: 'Aucun',
       photoUrl:'assets/contacts/Mamadou.jpg',
       email:'siradio156@gmail.com',
