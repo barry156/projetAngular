@@ -18,7 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import {ContactComponent} from "./contact/contact.component";
 import {ContactListComponent} from "./contact-list/contact-list.component";
 import {FormComponent} from "./form/form.component";
-import {LandingPageComponent} from "./landing-page/landing-page.component";
+import {ContactFormComponent} from "./contactForm/contactForm.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { GraphComponent } from './graph/graph.component';
 import { ListeDestinationComponent } from './liste-destination/liste-destination.component';
@@ -46,7 +46,7 @@ import { EmployeeComponent } from './employee/employee.component';
     ContactComponent,
     ContactListComponent,
     FormComponent,
-    LandingPageComponent,
+    ContactFormComponent,
     GraphComponent,
     ListeDestinationComponent,
     DestinationComponent,

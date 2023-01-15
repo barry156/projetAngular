@@ -3,11 +3,11 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-landing-page',
-  templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss']
+  selector: 'app-contactForm',
+  templateUrl: './contactForm.component.html',
+  styleUrls: ['./contactForm.component.scss']
 })
-export class LandingPageComponent implements OnInit{
+export class ContactFormComponent implements OnInit{
 
   closeResult = '';
 

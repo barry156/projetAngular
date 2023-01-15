@@ -4,7 +4,7 @@ import {CarousselComponent} from "./caroussel/caroussel.component";
 import {ContactComponent} from "./contact/contact.component";
 import {FormComponent} from "./form/form.component";
 import {ContactListComponent} from "./contact-list/contact-list.component";
-import {LandingPageComponent} from "./landing-page/landing-page.component";
+import {ContactFormComponent} from "./contactForm/contactForm.component";
 import { GraphComponent } from './graph/graph.component';
 import {DestinationComponent} from "./destination/destination.component";
 import {ListeDestinationComponent} from "./liste-destination/liste-destination.component";
