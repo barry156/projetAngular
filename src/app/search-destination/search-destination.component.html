@@ -18,7 +18,7 @@
   <tr *ngFor="let destination of destinations | searchDestination :searchtext">
     <th scope="row">{{destination.id | number}}</th>
 
-    <td>{{destination.nomlieu}}</td>
+    <td><a routerLink="../membres/{{destination.id}}" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{destination.nomlieu}}</a></td>
     <td>{{destination.pays}}</td>
     <td><img [src]="destination.afficheUrl" alt="image non trouvée"></td>
     <td>{{destination.prix | currency:'EUR':true }}</td>

@@ -18,4 +18,6 @@ export class SearchDestinationComponent {
 
     this.destinations=this.destinationService.getAllDestinations();
   }
+
+
 }

@@ -9,7 +9,6 @@ import {DestinationDetailComponent} from "./destination-detail/destination-detai
 import {AfriqueComponent} from "./afrique/afrique.component";
 import {AsieComponent} from "./asie/asie.component";
 import {EuropeComponent} from "./europe/europe.component";
-import {EmployeeComponent} from "./employee/employee.component";
 import {SearchDestinationComponent } from './search-destination/search-destination.component';
 import {OceanieComponent} from "./oceanie/oceanie.component";
 import {AmeriqueNordComponent} from "./amerique-nord/amerique-nord.component";
@@ -21,7 +20,7 @@ const routes: Routes = [
 
 
 
-  { path:'', redirectTo: 'caroussel', pathMatch: 'full'},
+  { path:'', redirectTo: 'alldestinations', pathMatch: 'full'},
   { path: 'contact', component: ContactListComponent},
   { path: 'rechercheDestination', component: SearchDestinationComponent},
   { path: 'newDestinationForm', component: FormComponent},
@@ -33,7 +32,6 @@ const routes: Routes = [
   { path: 'asiedestination', component: AsieComponent},
   { path: 'europedestination', component: EuropeComponent},
   { path: 'oceaniedestination', component: OceanieComponent},
-  { path: 'employee', component: EmployeeComponent},
   { path: 'nadestination', component: AmeriqueNordComponent},
   { path: 'sadestination', component: AmeriqueSudComponent},
 
