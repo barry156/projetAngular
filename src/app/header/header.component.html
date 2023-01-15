@@ -61,10 +61,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active"routerLink="caroussel" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Caroussel</a>
+          <a class="nav-link active"routerLink="caroussel" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" [routerLinkActiveOptions]="{ exact: true }">Caroussel</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="graph" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Graphe</a>
+          <a class="nav-link" routerLink="graph" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" [routerLinkActiveOptions]="{ exact: true }">Graphe</a>
         </li>
         <!--<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,23 +78,33 @@
           </ul>
         </li>-->
         <li class="nav-item">
-
-          <a class="nav-link" routerLink="employee" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">our team</a>
+          <a class="nav-link" routerLink="rechercheDestination" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Recherche de lieu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="contactForm" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Nous contacter</a>
+          <a class="nav-link active"routerLink="contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active"routerLink="contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About us</a>
-        </li>
-        <li class="nav-item">
-          <a  class="nav-link"  role="button" (click)="onAddNewDestination()">Ajouter une destination</a>
+          <a  class="nav-link"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" role="button" (click)="onAddNewDestination()">Ajouter une destination</a>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="https:/www.github.com/barry156/projetAngular" role="button"
+      ><i class="fa fa-github"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com" role="button"
+      ><i class="fa fa-instagram"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.fr" role="button"
+      ><i class="fa fa-google"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com" role="button"
+      ><i class="fa fa-twitter"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" role="button"
+      ><i class="fa fa-facebook-f"></i
+      ></a>
+
+
     </div>
   </div>
 </nav>

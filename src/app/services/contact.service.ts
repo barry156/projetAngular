@@ -29,7 +29,7 @@ export class ContactService{
       identifiantIG: 'itsnaomie',
       numTel: 145,
       facebook: 'Aucun',
-      photoUrl:'assets/contacts/img2.jpg',
+      photoUrl:'assets/contacts/imgNaomie.jpg',
       email:'naomienguemnang@gmail.com',
       activites:"fleuve"
 

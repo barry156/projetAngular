@@ -1,0 +1,28 @@
+<input type="search" class="form-control border-primary m-2" id="exampleFormControlInput1" placeholder="chercher par nom de lieu ou par continent" [(ngModel)]="searchtext">
+
+<table id="customers" class="table table-bordered h-auto">
+
+  <!--Table head-->
+  <thead>
+  <tr>
+    <th scope="col">id</th>
+    <th scope="col">nom du lieu</th>
+    <th scope="col">pays</th>
+    <th scope="col">image</th>
+    <th scope="col">prix</th>
+    <th scope="col">region</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let destination of destinations | searchDestination :searchtext">
+    <th scope="row">{{destination.id | number}}</th>
+
+    <td>{{destination.nomlieu}}</td>
+    <td>{{destination.pays}}</td>
+    <td><img [src]="destination.afficheUrl" alt="image non trouvée"></td>
+    <td>{{destination.prix | currency:'EUR':true }}</td>
+    <td>{{destination.region}}</td>
+  </tr>
+  </tbody>
+</table>

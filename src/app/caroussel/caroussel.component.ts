@@ -7,7 +7,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./caroussel.component.scss']
 })
 export class CarousselComponent {
-  images = ['../../assets/slideshow/slideshow1.jpg','../assets/slideshow/slideshow2.jpg' , '../../assets/slideshow/slideshow3.jpg' ]
+  images = ['../../assets/slideshows/SudAfrica2.jpg','../../assets/slideshows/bolivie.jpg','../assets/slideshows/kenia.jpg' , '../../assets/slideshows/Melborne.jpg','../../assets/slideshows/TajMahalIndia.jpg','../../assets/slideshows/IsaaksquareRussie.jpg', '../../assets/slideshows/AsiaChureitoPagoda.jpg','../../assets/slideshows/ParisFrance.jpg']
 
 
 }

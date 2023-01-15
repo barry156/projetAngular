@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 
+
 import {DestinationService} from "../services/destination.service";
 
 
@@ -15,6 +16,16 @@ export class HeaderComponent {
   constructor(private service:DestinationService,private router:Router) {
 
   }
+  ngOnInit() {
+    /*const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('navbarSupportedContent')
+    const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+    navLinks.forEach((l) => {
+      l.addEventListener('click', () => { bsCollapse.toggle() })
+    })*/
+
+
+  }
 
 
   press() {
@@ -27,5 +38,6 @@ export class HeaderComponent {
   onAddNewDestination() {
     this.router.navigateByUrl('/newDestinationForm');
   }
+
 
 }
