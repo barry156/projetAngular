@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validator, Validators} from "@angular/forms";
+import {FormBuilder, FormGroup,Validators} from "@angular/forms";
 import {map,Observable} from "rxjs";
 import {Router} from "@angular/router";
 import {destination} from "../model/destination.model";
@@ -19,6 +19,7 @@ export class FormComponent implements OnInit {
               private router: Router) {
 
   }
+
   ngOnInit():void {
     this.destinationForm= this.formBuilder.group({
 
@@ -27,7 +28,7 @@ export class FormComponent implements OnInit {
       continent:[null,[Validators.required]],
       region:[null],
       prix:[null],
-      afficheUrl:[null,[Validators.required]],
+      afficheUrl:[null,[Validators.required],]
 
     });
   }
@@ -36,4 +37,7 @@ export class FormComponent implements OnInit {
     this.destinationService.addDestination(this.destinationForm.value);
     this.router.navigateByUrl('/alldestinations');
   }
+
+
+
 }

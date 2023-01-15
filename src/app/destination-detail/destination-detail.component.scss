@@ -13,3 +13,21 @@ img {
   }
 
 }
+
+#imageExterne{
+  width: 65%;
+  height: 25vw;
+  object-fit: cover;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  #imageExterne {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+
+}

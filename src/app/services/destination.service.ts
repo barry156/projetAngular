@@ -8,6 +8,8 @@ import {ContactModel} from "../model/contact.model";
 })
 export class DestinationService {
 
+  continents:string[]=["Afrique","Europe","Asie","Amérique du Nord","Amérique du Sud","Océanie"];
+
   destinations: destination[] = [
     {
       id: 1,
@@ -440,5 +442,13 @@ const contact: destination={
     id:this.destinations[this.destinations.length-1].id +1
   };
   this.destinations.push(contact);
+}
+
+isAContinent(testedString:string):boolean{
+ if(this.continents.includes(testedString)){
+  return true;
+ }else{
+  return false;
+ }
 }
 }
