@@ -21,7 +21,6 @@ const routes: Routes = [
 
 
   { path:'', redirectTo: 'caroussel', pathMatch: 'full'},
-  { path: 'contactForm', component: LandingPageComponent},
   { path: 'contact', component: ContactListComponent},
   { path: 'newDestinationForm', component: FormComponent},
   { path: 'caroussel', component: CarousselComponent},
