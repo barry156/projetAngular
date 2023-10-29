@@ -53,7 +53,4 @@ export class ContactFormComponent implements OnInit{
         return `with: ${reason}`;
       }
     }
-
-
-
 }

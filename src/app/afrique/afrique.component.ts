@@ -18,6 +18,4 @@ export class AfriqueComponent  {
     this.destinations=this.destinationService.getAfriqueDestinations();
   }
 
-
-
 }

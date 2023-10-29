@@ -18,9 +18,4 @@ export class AsieComponent {
     this.destinations=this.destinationService.getAsieDestinations();
   }
 
-
-
-
-
-
 }
