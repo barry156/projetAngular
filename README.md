@@ -1,4 +1,4 @@
-# Projet2
+# ProjetAngular
 Welcome to this dynamic web application, generated with Angular CLI version 15.0.5. This project is dedicated to creating a user-friendly platform for a travel agency. Our mission is to provide tourists with the means to discover incredible destinations around the world, conveniently categorized by continents.
 ## Getting Started
 
